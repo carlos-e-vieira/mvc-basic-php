@@ -25,8 +25,8 @@ class CustomerController
         return $this->customer->getById($id);
     }
 
-    public function store(array $data): array
+    public function store(array $data): void
     {
-        return $this->customer->create($data);
+        $this->customer->create($data);
     }
 }

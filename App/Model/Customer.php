@@ -29,14 +29,8 @@ class Customer
         return $this->customers[$id];
     }
 
-    public function create(array $data): array
+    public function create(array $data): void
     {
-        $key = count($this->customers);
-        echo $key;
-        $this->customers[] = [
-
-        ];
-
-        return $this->customers;
+        $this->customers[]= $data;
     }
 }

@@ -24,11 +24,14 @@ echo $breakLine;
 
 // STORE
 $newCustomer = [
-
+    'name' => 'Flavio2',
+    'email' => 'flavio@teste.com',
+    'phone' => '1145456363',
 ];
 
 echo 'Create:';
 echo '<pre>';
-print_r($customers->store($newCustomer));
+$customers->store($newCustomer);
+print_r($customers->index());
 echo '</pre>';
 echo $breakLine;
