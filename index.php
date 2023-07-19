@@ -55,3 +55,16 @@ echo '<pre>';
 print_r($customers->index());
 echo '</pre>';
 echo $breakLine;
+
+// DELETE
+echo 'Delete:';
+echo 'Antes do Delete';
+echo '<pre>';
+print_r($customers->index());
+echo '</pre>';
+echo '<pre>';
+$customers->destroy(0);
+echo 'Depois do Delete';
+print_r($customers->index());
+echo '</pre>';
+echo $breakLine;

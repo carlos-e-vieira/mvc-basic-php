@@ -34,4 +34,9 @@ class CustomerController
     {
         return $this->customer->update($data, $id);
     }
+
+    public function destroy(int $id): void
+    {     
+        $this->customer->delete($id);
+    }
 }

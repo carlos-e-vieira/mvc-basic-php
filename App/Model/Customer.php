@@ -42,4 +42,9 @@ class Customer
 
         return $this->customers[$id];
     }
+
+    public function delete(int $id): void
+    {
+        unset($this->customers[$id]);
+    }
 }
