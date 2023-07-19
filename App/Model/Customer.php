@@ -33,4 +33,13 @@ class Customer
     {
         $this->customers[]= $data;
     }
+
+    public function update(array $data, int $id): array
+    {
+        $this->customers[$id]['name'] = $data['name'];
+        $this->customers[$id]['email'] = $data['email'];
+        $this->customers[$id]['phone'] = $data['phone'];
+
+        return $this->customers[$id];
+    }
 }

@@ -35,3 +35,23 @@ $customers->store($newCustomer);
 print_r($customers->index());
 echo '</pre>';
 echo $breakLine;
+
+// UPDATE
+$updateCustomer = [
+    'name' => 'Raquel',
+    'email' => 'raquel@teste.com',
+    'phone' => '1123234477',
+];
+
+$idUpdateCustomer = 2;
+
+echo 'Update:';
+echo '<pre>';
+print_r($customers->edit($updateCustomer, $idUpdateCustomer));
+echo '</pre>';
+
+echo 'Todos após a atalização:';
+echo '<pre>';
+print_r($customers->index());
+echo '</pre>';
+echo $breakLine;

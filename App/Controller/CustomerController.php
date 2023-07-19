@@ -29,4 +29,9 @@ class CustomerController
     {
         $this->customer->create($data);
     }
+
+    public function edit(array $data, int $id): array
+    {
+        return $this->customer->update($data, $id);
+    }
 }
